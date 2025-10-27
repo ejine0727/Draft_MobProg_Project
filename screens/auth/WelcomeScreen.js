@@ -4,9 +4,10 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function WelcomeScreen() {
   const navigation = useNavigation();
+
   return (
     <ImageBackground
-      source={require('../assets/splash-icon.png')}
+      source={require('../../assets/splash-icon.png')} // adjust path if needed
       style={styles.background}
       imageStyle={{ opacity: 0.3 }}
     >
@@ -44,10 +45,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   title: {
-    fontSize: 36,
+    fontSize: 42,
     fontWeight: 'bold',
     color: '#fff',
-    marginBottom: 80,
+    marginBottom: 100,
     letterSpacing: 2,
     textShadowColor: '#000',
     textShadowOffset: { width: 2, height: 2 },
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
   },
   joinButton: {
     backgroundColor: '#fff',
-    borderRadius: 6,
-    paddingVertical: 12,
-    paddingHorizontal: 32,
+    borderRadius: 8,
+    paddingVertical: 14,
+    paddingHorizontal: 36,
     marginBottom: 16,
     width: '100%',
     alignItems: 'center',
@@ -65,11 +66,11 @@ const styles = StyleSheet.create({
   joinText: {
     color: '#E75C1A',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 18,
   },
   loginText: {
     color: '#fff',
     fontSize: 16,
-    opacity: 0.7,
+    opacity: 0.8,
   },
 });
